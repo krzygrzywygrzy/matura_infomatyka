@@ -1,3 +1,3 @@
-import dwadziescia_jeden_pr as dj
+import dwadziescia_lipiec as dl
 
-dj.z3()
+dl.z3()
