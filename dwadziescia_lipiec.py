@@ -50,6 +50,7 @@ def mnoznik(liczba):
         case _:
             return 0
 
+
 def z3():
     plik = open("20/identyfikator_przyklad.txt")
     zapis = open("20/wyniki4_3.txt", "a")
