@@ -58,12 +58,32 @@ def zad2():
     plik2.close()
 
 
+def pom3(line):
+    liczby = []
+    splitted = line.split()
+    for liczba in splitted:
+       if liczba not in liczby:
+           liczby.append(liczba)
+
+    return liczby
+
 def zad3():
     plik1 = open("./18_czer/przyklad1.txt", "r")
     plik2 = open("./18_czer/przyklad2.txt", "r")
 
 
+    ilosc = 0
+    linie = []
+    for i, (line1, line2) in enumerate(zip(plik1, plik2)):
+        ln1 = pom3(line1)
+        ln2 = pom3(line2)
 
+        if ln1 == ln2:
+            ilosc += 1
+            linie.append(i+1)
+
+
+    print(ilosc, linie)
     plik1.close()
     plik2.close()
 
