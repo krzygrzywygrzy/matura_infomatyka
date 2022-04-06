@@ -41,7 +41,4 @@ def zad3():
           print(linia[:-1])
 
 
-
-
-
   plik.close()

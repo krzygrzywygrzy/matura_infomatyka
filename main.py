@@ -1,3 +1,3 @@
-import osiemanscie as os
+import  czer_siedemn
 
-os.zad3()
+czer_siedemn.zad4()
