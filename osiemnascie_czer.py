@@ -32,7 +32,7 @@ def pom2(linia):
     odd = 0
     even = 0
     for number in splitted:
-        if(int(number) % 2) == 0:
+        if (int(number) % 2) == 0:
             even += 1
         else:
             odd += 1
@@ -62,15 +62,15 @@ def pom3(line):
     liczby = []
     splitted = line.split()
     for liczba in splitted:
-       if liczba not in liczby:
-           liczby.append(liczba)
+        if liczba not in liczby:
+            liczby.append(liczba)
 
     return liczby
+
 
 def zad3():
     plik1 = open("./18_czer/przyklad1.txt", "r")
     plik2 = open("./18_czer/przyklad2.txt", "r")
-
 
     ilosc = 0
     linie = []
@@ -80,11 +80,33 @@ def zad3():
 
         if ln1 == ln2:
             ilosc += 1
-            linie.append(i+1)
-
+            linie.append(i + 1)
 
     print(ilosc, linie)
     plik1.close()
     plik2.close()
 
 
+def pomoc4(line):
+    arr = []
+    for x in line.split():
+        arr.append(int(x))
+
+    return arr
+
+
+def zad4():
+    plik1 = open("./18_czer/przyklad1.txt", "r")
+    plik2 = open("./18_czer/przyklad2.txt", "r")
+    zapis = open("./18_czer/wynik4_3.txt", "a")
+
+    for line1, line2 in zip(plik1, plik2):
+        arr = [*pomoc4(line1), *pomoc4(line2)]
+
+        for x in sorted(arr):
+            zapis.write(str(x) + " ")
+        zapis.write("\n")
+
+    plik1.close()
+    plik2.close()
+    zapis.close()

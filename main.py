@@ -1,3 +1,3 @@
-import osiemnascie_czer as o
+import  osiemnascie_czer
 
-o.zad3()
+osiemnascie_czer.zad4()

@@ -36,3 +36,7 @@ def nwd(a, b):
 
 
 def nww(a, b): return a * b // nwd(a, b)
+
+
+def sortowanie_alfabetyczne(tekst):
+    return sorted(list(tekst))
