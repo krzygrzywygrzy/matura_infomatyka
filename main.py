@@ -1,3 +1,3 @@
-import  czer_siedemn
+import siedemn
 
-czer_siedemn.zad4()
+siedemn.zad3()
